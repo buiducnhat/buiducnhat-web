@@ -25,14 +25,16 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: './articles',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          routeBasePath: '/articles',
+          editUrl: 'https://github.com/buiducnhat/buiducnhat.me',
         },
         blog: {
+          path: './blogs',
+          routeBasePath: '/blogs',
           showReadingTime: true,
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/buiducnhat/buiducnhat.me',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -50,14 +52,15 @@ const config = {
           alt: 'Logo',
           src: 'img/logo.svg',
         },
+        hideOnScroll: true,
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'index',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Articles',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/blogs', label: 'Blogs', position: 'left' },
           {
             href: 'https://github.com/buiducnhat/buiducnhat.me',
             label: 'GitHub',
@@ -104,6 +107,14 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      algolia: {
+        appId: '2EA7E19DKR',
+        apiKey: '2bbad1e4ab450747b0e31a113b09f6b6',
+        indexName: 'dev_buiducnhat',
+        contextualSearch: true,
+        searchParameters: {},
+        searchPagePath: 'search',
       },
     }),
 };
