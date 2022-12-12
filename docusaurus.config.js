@@ -25,13 +25,14 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          path: './articles',
+          path: './data/articles',
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/articles',
           editUrl: 'https://github.com/buiducnhat/buiducnhat.me',
         },
         blog: {
-          path: './blogs',
+          path: './data/blogs',
+          authorsMapPath: './data/blogs/authors.json',
           routeBasePath: '/blogs',
           showReadingTime: true,
           editUrl: 'https://github.com/buiducnhat/buiducnhat.me',
@@ -61,9 +62,14 @@ const config = {
             label: 'Articles',
           },
           { to: '/blogs', label: 'Blogs', position: 'left' },
+          { to: '/portfolio', label: 'Portfolio', position: 'left' },
           {
             href: 'https://github.com/buiducnhat/buiducnhat.me',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            type: 'localeDropdown',
             position: 'right',
           },
         ],
@@ -93,7 +99,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                to: '/blogs',
               },
               {
                 label: 'GitHub',

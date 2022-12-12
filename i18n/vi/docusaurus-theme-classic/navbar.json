@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Bùi Đức Nhật",
+    "description": "The title in the navbar"
+  },
+  "item.label.Articles": {
+    "message": "Articles",
+    "description": "Navbar item with label Articles"
+  },
+  "item.label.Blogs": {
+    "message": "Blogs",
+    "description": "Navbar item with label Blogs"
+  },
+  "item.label.Portfolio": {
+    "message": "Portfolio",
+    "description": "Navbar item with label Portfolio"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
