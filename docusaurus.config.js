@@ -32,7 +32,6 @@ const config = {
         },
         blog: {
           path: './data/blogs',
-          authorsMapPath: './data/blogs/authors.json',
           routeBasePath: '/blogs',
           showReadingTime: true,
           editUrl: 'https://github.com/buiducnhat/buiducnhat.me',

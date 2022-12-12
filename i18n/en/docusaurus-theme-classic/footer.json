@@ -21,7 +21,7 @@
   },
   "link.item.label.Blog": {
     "message": "Blog",
-    "description": "The label of footer link with label=Blog linking to /blog"
+    "description": "The label of footer link with label=Blog linking to /blogs"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",

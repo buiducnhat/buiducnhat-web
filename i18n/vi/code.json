@@ -396,5 +396,8 @@
   "theme.tags.tagsPageTitle": {
     "message": "Thẻ",
     "description": "The title of the tag list page"
+  },
+  "Porfolio": {
+    "message": "Portfolio"
   }
 }
