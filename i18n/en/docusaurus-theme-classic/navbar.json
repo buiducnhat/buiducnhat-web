@@ -3,9 +3,9 @@
     "message": "Bùi Đức Nhật",
     "description": "The title in the navbar"
   },
-  "item.label.Articles": {
-    "message": "Articles",
-    "description": "Navbar item with label Articles"
+  "item.label.Series": {
+    "message": "Series",
+    "description": "Navbar item with label Series"
   },
   "item.label.Blogs": {
     "message": "Blogs",
@@ -18,5 +18,13 @@
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
+  },
+  "item.label.About": {
+    "message": "About",
+    "description": "Navbar item with label About"
+  },
+  "item.label.All tags": {
+    "message": "All tags",
+    "description": "Navbar item with label All tags"
   }
 }

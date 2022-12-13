@@ -25,9 +25,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          path: './data/articles',
+          path: './data/series',
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/articles',
+          routeBasePath: '/series',
           editUrl: 'https://github.com/buiducnhat/buiducnhat.me',
         },
         blog: {
@@ -56,12 +56,19 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'index',
+            docId: 'welcome',
             position: 'left',
-            label: 'Articles',
+            label: 'Series',
           },
-          { to: '/blogs', label: 'Blogs', position: 'left' },
+          {
+            type: 'dropdown',
+            label: 'Blogs',
+            to: '/blogs',
+            items: [{ to: '/blogs/tags', label: 'All tags' }],
+            position: 'left',
+          },
           { to: '/portfolio', label: 'Portfolio', position: 'left' },
+          { to: '/about', label: 'About', position: 'left' },
           {
             href: 'https://github.com/buiducnhat/buiducnhat.me',
             label: 'GitHub',
@@ -77,12 +84,8 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Contact',
+            title: 'Social',
             items: [
-              {
-                label: 'Github',
-                href: 'https://github.com/buiducnhat',
-              },
               {
                 label: 'Facebook',
                 href: 'https://www.facebook.com/buiducnhat47',
@@ -90,6 +93,10 @@ const config = {
               {
                 label: 'Email',
                 href: 'mailto:nhaths4701@gmail.com',
+              },
+              {
+                label: 'Github',
+                href: 'https://github.com/buiducnhat',
               },
             ],
           },
@@ -101,8 +108,8 @@ const config = {
                 to: '/blogs',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Series',
+                to: '/series',
               },
             ],
           },
