@@ -26,7 +26,7 @@ const config = {
       ({
         docs: {
           path: './data/series',
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./series.sidebars.js'),
           routeBasePath: '/series',
           editUrl: 'https://github.com/buiducnhat/buiducnhat.me',
         },
