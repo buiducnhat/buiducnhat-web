@@ -2,5 +2,9 @@
   "version.label": {
     "message": "Next",
     "description": "The label for version current"
+  },
+  "sidebar.seriesSidebar.category.Docker": {
+    "message": "Docker",
+    "description": "The label for category Docker in sidebar seriesSidebar"
   }
 }

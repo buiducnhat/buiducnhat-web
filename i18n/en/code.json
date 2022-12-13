@@ -399,5 +399,8 @@
   },
   "Porfolio": {
     "message": "Porfolio"
+  },
+  "About me": {
+    "message": "About me"
   }
 }
