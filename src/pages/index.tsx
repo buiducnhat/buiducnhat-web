@@ -13,14 +13,19 @@ const socials = [
     iconUrl: 'https://img.icons8.com/fluent/48/000000/facebook-new.png',
   },
   {
+    name: 'github',
+    url: 'https://github.com/buiducnhat47',
+    iconUrl: 'https://img.icons8.com/fluent/48/000000/github.png',
+  },
+  {
     name: 'linkedin',
-    url: 'https://www.linkedin.com/in/buiducnhat/',
+    url: 'https://www.linkedin.com/in/nhat-bui-a97373158/',
     iconUrl: 'https://img.icons8.com/fluent/48/000000/linkedin.png',
   },
   {
-    name: 'github',
-    url: 'https://github.com/buiducnhat',
-    iconUrl: 'https://img.icons8.com/fluent/48/000000/github.png',
+    name: 'email',
+    url: 'mailto:nhaths4701@gmail.com',
+    iconUrl: 'https://img.icons8.com/fluent/48/000000/email.png',
   },
 ];
 
@@ -64,12 +69,16 @@ export default function Home(): JSX.Element {
             </p>
 
             <div className="py-3 mb-5 flex space-x-3">
-              <Button className="rounded-full w-28">
-                <Translate>Blogs</Translate>
-              </Button>
-              <OutlinedButton className="rounded-full w-28">
-                <Translate>Projects</Translate>
-              </OutlinedButton>
+              <Link href="/blogs">
+                <Button className="rounded-full w-28">
+                  <Translate>Blogs</Translate>
+                </Button>
+              </Link>
+              <Link href="/portfolio">
+                <OutlinedButton className="rounded-full w-28">
+                  <Translate>Projects</Translate>
+                </OutlinedButton>
+              </Link>
             </div>
 
             <p className="text-md md:text-lg tracking-wide">
