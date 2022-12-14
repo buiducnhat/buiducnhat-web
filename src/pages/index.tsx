@@ -3,7 +3,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 
-import Translate from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 import { Button, OutlinedButton } from '@site/src/components/button';
 
 const socials = [
@@ -33,7 +33,10 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title="Home page"
+      title={translate({
+        id: 'homepage.title',
+        message: 'Home page',
+      })}
       description="Personal website of Bùi Đức Nhật, a developer, sharing about programming, technology, and life.">
       <main className="min-h-[70vh] bg-gradient-to-br md:bg-gradient-to-tr from-primary-300 to-gray-50 dark:from-primary-800 dark:to-gray-800">
         <div className="grid grid-cols-1 md:grid-cols-2 py-10 md:py-20">

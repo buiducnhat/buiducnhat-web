@@ -417,5 +417,8 @@
   },
   "I am a developer from Viet Nam, I enjoy sharing about programming, technology, and life.": {
     "message": "Mình là Nhật, một lập trình viên và cũng đam mê với nó, cùng đó là sở thích chia sẻ kinh nghiệm về lập trình, công nghệ hay viết lách những thứ linh tinh."
+  },
+  "homepage.title": {
+    "message": "Trang chủ"
   }
 }

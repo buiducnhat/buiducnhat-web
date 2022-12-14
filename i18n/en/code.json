@@ -417,5 +417,8 @@
   },
   "I am a developer from Viet Nam, I enjoy sharing about programming, technology, and life.": {
     "message": "I am a developer from Viet Nam, I enjoy sharing about programming, technology, and life."
+  },
+  "homepage.title": {
+    "message": "Home page"
   }
 }
