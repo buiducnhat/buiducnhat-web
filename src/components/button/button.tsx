@@ -14,9 +14,9 @@ function Button({ isLoading, hasShadow: isShadow, children, className, ...rest }
     <button
       className={twMerge(
         styles.ripple,
-        'flex cursor-pointer items-center justify-center px-5 py-2.5 rounded-md font-semibold text-white bg-purple-500 duration-200',
+        'flex cursor-pointer items-center justify-center px-5 py-2.5 rounded-md font-semibold text-white bg-primary-500 duration-200',
         isShadow &&
-          'shadow-md shadow-purple-300 dark:shadow-purple-700 hover:shadow-lg hover:shadow-purple-300 dark:hover:shadow-purple-700',
+          'shadow-md shadow-primary-300 dark:shadow-primary-700 hover:shadow-lg hover:shadow-primary-300 dark:hover:shadow-primary-700',
         className
       )}
       disabled={isLoading}
@@ -24,7 +24,7 @@ function Button({ isLoading, hasShadow: isShadow, children, className, ...rest }
       {isLoading ? (
         <svg
           role="status"
-          className="mr-2 h-8 w-8 animate-spin fill-purple-800 text-gray-200 dark:fill-purple-200 dark:text-gray-500"
+          className="mr-2 h-8 w-8 animate-spin fill-primary-800 text-gray-200 dark:fill-primary-200 dark:text-gray-500"
           viewBox="0 0 100 101"
           fill="none"
           xmlns="http://www.w3.org/2000/svg">

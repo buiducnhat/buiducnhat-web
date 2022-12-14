@@ -4,12 +4,12 @@
 }
 
 .ripple:hover {
-  background: theme('colors.purple.600')
-    radial-gradient(circle, transparent 1%, theme('colors.purple.600') 1%) center/15000%;
+  background: theme('colors.primary.600')
+    radial-gradient(circle, transparent 1%, theme('colors.primary.600') 1%) center/15000%;
 }
 
 .ripple:active {
-  background-color: theme('colors.purple.300');
+  background-color: theme('colors.primary.300');
   background-size: 100%;
   transition: background 0s;
 }
