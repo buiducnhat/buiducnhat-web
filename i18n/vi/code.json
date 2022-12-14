@@ -401,21 +401,21 @@
     "message": "Portfolio"
   },
   "About me": {
-    "message": "About me"
+    "message": "Giới thiệu"
   },
   "Hello": {
-    "message": "Xin chào"
+    "message": "Hello"
   },
   "Here's who I am & what I do": {
-    "message": "Tôi là ai và tôi làm gi?"
+    "message": "Đây là đâu? Đây là gì vậy"
   },
   "Blogs": {
-    "message": "Blogs"
+    "message": "Blog"
   },
   "Projects": {
-    "message": "Projects"
+    "message": "Project"
   },
   "I am a developer from Viet Nam, I enjoy sharing about programming, technology, and life.": {
-    "message": "Tôi là một lập trình viên từ Việt Nam, tôi thích chia sẻ về lập trình, công nghệ và cuộc sống."
+    "message": "Mình là Nhật, một lập trình viên và cũng đam mê với nó, cùng đó là sở thích chia sẻ kinh nghiệm về lập trình, công nghệ hay viết lách những thứ linh tinh."
   }
 }
