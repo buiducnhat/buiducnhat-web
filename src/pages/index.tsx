@@ -9,12 +9,12 @@ import { Button, OutlinedButton } from '@site/src/components/button';
 const socials = [
   {
     name: 'facebook',
-    url: 'https://www.facebook.com/buiducnhat',
+    url: 'https://www.facebook.com/buiducnhat47',
     iconUrl: 'https://img.icons8.com/fluent/48/000000/facebook-new.png',
   },
   {
     name: 'github',
-    url: 'https://github.com/buiducnhat47',
+    url: 'https://github.com/buiducnhat',
     iconUrl: 'https://img.icons8.com/fluent/48/000000/github.png',
   },
   {
