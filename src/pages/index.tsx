@@ -41,7 +41,7 @@ export default function Home(): JSX.Element {
                 src="https://github.com/buiducnhat.png"
                 alt="cover"
               />
-              <h1 className="text-center mb-5 text-purple-900 dark:text-pink-50">
+              <h1 className="text-center mb-5 text-purple-900 dark:text-purple-50">
                 {siteConfig.title}
               </h1>
               <span className="w-full p-0.5 bg-pink-600 dark:bg-pink-100 lg:w-1/5 mb-5"></span>
@@ -58,7 +58,7 @@ export default function Home(): JSX.Element {
           </div>
 
           <div className="p-10 max-w-md">
-            <p className="text-9xl font-bold text-purple-900 dark:text-pink-50">
+            <p className="text-9xl font-bold text-purple-900 dark:text-purple-50">
               <Translate>Hello</Translate>
             </p>
             <p className="text-2xl">
