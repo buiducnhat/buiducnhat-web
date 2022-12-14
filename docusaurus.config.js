@@ -129,6 +129,8 @@ const config = {
         searchPagePath: 'search',
       },
     }),
+
+  plugins: ['docusaurus-plugin-sass'],
 };
 
 module.exports = config;
