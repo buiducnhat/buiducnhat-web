@@ -2,10 +2,29 @@ import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import { twMerge } from 'tailwind-merge';
+import Link from '@docusaurus/Link';
 
 import styles from './index.module.css';
 import Translate from '@docusaurus/Translate';
 import { Button, OutlinedButton } from '@site/src/components/button';
+
+const socials = [
+  {
+    name: 'facebook',
+    url: 'https://www.facebook.com/buiducnhat',
+    iconUrl: 'https://img.icons8.com/fluent/48/000000/facebook-new.png',
+  },
+  {
+    name: 'linkedin',
+    url: 'https://www.linkedin.com/in/buiducnhat/',
+    iconUrl: 'https://img.icons8.com/fluent/48/000000/linkedin.png',
+  },
+  {
+    name: 'github',
+    url: 'https://github.com/buiducnhat',
+    iconUrl: 'https://img.icons8.com/fluent/48/000000/github.png',
+  },
+];
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
@@ -30,27 +49,11 @@ export default function Home(): JSX.Element {
             </div>
 
             <div className="w-full flex justify-evenly py-1 space-x-3 mt-5 bg-white dark:bg-gray-900">
-              <a href=" https://www.facebook.com/buiducnhat" target="_blank" rel="noreferrer">
-                <img
-                  className="w-8 h-8 rounded-full"
-                  src="https://img.icons8.com/fluent/48/000000/facebook-new.png"
-                  alt="facebook"
-                />
-              </a>
-              <a href="https://www.linkedin.com/in/buiducnhat/" target="_blank" rel="noreferrer">
-                <img
-                  className="w-8 h-8 rounded-full"
-                  src="https://img.icons8.com/fluent/48/000000/linkedin.png"
-                  alt="linkedin"
-                />
-              </a>
-              <a href="https://github.com/buiducnhat" target="_blank" rel="noreferrer">
-                <img
-                  className="w-8 h-8 rounded-full"
-                  src="https://img.icons8.com/fluent/48/000000/github.png"
-                  alt="github"
-                />
-              </a>
+              {socials.map((social, index) => (
+                <Link key={index} href={social.url}>
+                  <img className="w-8 h-8 rounded-full" src={social.iconUrl} alt={social.name} />
+                </Link>
+              ))}
             </div>
           </div>
 
