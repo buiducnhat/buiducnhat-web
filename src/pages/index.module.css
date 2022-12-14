@@ -1,0 +1,7 @@
+.main {
+  background: linear-gradient(90deg, theme('colors.purple.300') 0%, theme('colors.white') 100%);
+}
+
+[data-theme='dark'] .main {
+  background: linear-gradient(90deg, theme('colors.purple.900') 0%, theme('colors.gray.900') 100%);
+}

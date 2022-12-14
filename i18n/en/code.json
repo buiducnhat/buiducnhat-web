@@ -402,5 +402,20 @@
   },
   "About me": {
     "message": "About me"
+  },
+  "Hello": {
+    "message": "Hello"
+  },
+  "Here's who I am & what I do": {
+    "message": "Here's who I am & what I do"
+  },
+  "Blogs": {
+    "message": "Blogs"
+  },
+  "Projects": {
+    "message": "Projects"
+  },
+  "I am a developer from Viet Nam, I enjoy sharing about programming, technology, and life.": {
+    "message": "I am a developer from Viet Nam, I enjoy sharing about programming, technology, and life."
   }
 }

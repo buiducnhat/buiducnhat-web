@@ -1,3 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+  border: none;
+  outline: none;
+}
+
 :root {
   --ifm-color-primary: #924ff2;
   --ifm-color-primary-dark: #7f31f0;

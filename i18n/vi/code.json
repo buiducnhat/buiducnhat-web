@@ -402,5 +402,20 @@
   },
   "About me": {
     "message": "About me"
+  },
+  "Hello": {
+    "message": "Xin chào"
+  },
+  "Here's who I am & what I do": {
+    "message": "Tôi là ai và tôi làm gi?"
+  },
+  "Blogs": {
+    "message": "Blogs"
+  },
+  "Projects": {
+    "message": "Projects"
+  },
+  "I am a developer from Viet Nam, I enjoy sharing about programming, technology, and life.": {
+    "message": "Tôi là một lập trình viên từ Việt Nam, tôi thích chia sẻ về lập trình, công nghệ và cuộc sống."
   }
 }
