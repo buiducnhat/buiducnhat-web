@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Bùi Đức Nhật',
-  tagline: 'A Software Developer and an open source lover from Vietnam 🇻🇳🇻🇳🇻🇳',
+  tagline: 'SOFTWARE DEVELOPER',
   url: 'https://buiducnhat.me',
   baseUrl: '/',
   onBrokenLinks: 'throw',

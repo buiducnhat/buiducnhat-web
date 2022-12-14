@@ -1,0 +1,38 @@
+@media screen and (max-width: 996px) {
+  .main {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  background: linear-gradient(90deg, var(--ifm-color-primary-light) 0%, var(--ifm-background-color) 50%);
+  min-height: 70vh;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  padding:  3rem 30rem;
+
+  .__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    background: var(--ifm-color-primary-lightest);
+  }
+
+  .__avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 1rem;
+  }
+}

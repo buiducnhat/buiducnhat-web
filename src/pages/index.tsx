@@ -1,28 +1,9 @@
 import React from 'react';
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Translate from '@docusaurus/Translate';
 import Layout from '@theme/Layout';
 
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/blogs">
-            <Translate description="The label of the link to the blog page">My blogs</Translate>
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+import styles from './index.module.scss';
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
@@ -30,9 +11,24 @@ export default function Home(): JSX.Element {
     <Layout
       title="Home page"
       description="Personal website of Bùi Đức Nhật, a developer, sharing about programming, technology, and life.">
-      <HomepageHeader />
+      <main className={styles.main}>
+        <div className={clsx('row', styles.profile)}>
+          <div className={clsx('item shadow--tl col', styles['__card'])}>
+            <img
+              className={styles['__avatar']}
+              src="https://github.com/buiducnhat.png"
+              alt="cover"
+            />
+            <h1 style={{ marginBottom: '2rem' }}>{siteConfig.title}</h1>
+            <p style={{ letterSpacing: '0.25em' }}>{siteConfig.tagline}</p>
+          </div>
 
-      <main>{/* <HomepageFeatures /> */}</main>
+          <div className={clsx('col', styles['--intro'])}>
+            <h2>Hello</h2>
+            <p>I am Bùi Đức Nhật, a developer, sharing about programming, technology, and life.</p>
+          </div>
+        </div>
+      </main>
     </Layout>
   );
 }
