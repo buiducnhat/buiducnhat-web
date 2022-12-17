@@ -1,8 +1,4 @@
 {
-  "My blogs": {
-    "message": "My blogs",
-    "description": "The label of the link to the blog page"
-  },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
@@ -420,5 +416,8 @@
   },
   "homepage.title": {
     "message": "Home page"
+  },
+  "Technical skills": {
+    "message": "Technical skills"
   }
 }

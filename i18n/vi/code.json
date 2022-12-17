@@ -1,8 +1,4 @@
 {
-  "My blogs": {
-    "message": "Xem Blog",
-    "description": "The label of the link to the blog page"
-  },
   "theme.ErrorPageContent.title": {
     "message": "Trang này đã bị lỗi.",
     "description": "The title of the fallback page when the page crashed"
@@ -420,5 +416,8 @@
   },
   "homepage.title": {
     "message": "Trang chủ"
+  },
+  "Technical skills": {
+    "message": "Technical skills"
   }
 }
