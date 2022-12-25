@@ -120,9 +120,9 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       algolia: {
-        appId: '2EA7E19DKR',
-        apiKey: '2bbad1e4ab450747b0e31a113b09f6b6',
-        indexName: 'dev_buiducnhat',
+        appId: '910OS4PMJA',
+        apiKey: '5b562fa43586ae1cb2d043816f6d2e31',
+        indexName: 'buiducnhat.me',
         contextualSearch: true,
         searchParameters: {},
         searchPagePath: 'search',
