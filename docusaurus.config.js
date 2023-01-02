@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Bùi Đức Nhật',
-  tagline: 'SOFTWARE DEVELOPER',
+  tagline: 'SOFTWARE ENGINEER',
   url: 'https://buiducnhat.me',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -15,7 +15,7 @@ const config = {
   projectName: 'buiducnhat.me',
 
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'vi',
     locales: ['en', 'vi'],
   },
 
@@ -64,7 +64,10 @@ const config = {
             type: 'dropdown',
             label: 'Blogs',
             to: '/blogs',
-            items: [{ to: '/blogs/tags', label: 'All tags' }],
+            items: [
+              { to: '/blogs', label: 'All blogs' },
+              { to: '/blogs/tags', label: 'All tags' },
+            ],
             position: 'left',
           },
           { to: '/portfolio', label: 'Portfolio', position: 'left' },

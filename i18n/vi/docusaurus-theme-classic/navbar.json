@@ -24,7 +24,11 @@
     "description": "Navbar item with label About"
   },
   "item.label.All tags": {
-    "message": "All tags",
+    "message": "Tất cả tag",
     "description": "Navbar item with label All tags"
+  },
+  "item.label.All blogs": {
+    "message": "Tất cả blog",
+    "description": "Navbar item with label All blogs"
   }
 }

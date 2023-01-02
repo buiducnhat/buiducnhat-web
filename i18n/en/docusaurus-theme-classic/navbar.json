@@ -26,5 +26,9 @@
   "item.label.All tags": {
     "message": "All tags",
     "description": "Navbar item with label All tags"
+  },
+  "item.label.All blogs": {
+    "message": "All blogs",
+    "description": "Navbar item with label All blogs"
   }
 }

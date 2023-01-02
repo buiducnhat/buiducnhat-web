@@ -13,7 +13,7 @@ function PortfolioPage() {
       <div className="min-h-[70vh] bg-gradient-to-br md:bg-gradient-to-tr from-primary-50 to-gray-50 dark:from-primary-900 dark:to-gray-900">
         <div className="container py-5">
           <h1 className="text-bold text-primary-900 dark:text-primary-50">
-            <Translate>About me</Translate>
+            <Translate>Porfolio</Translate>
           </h1>
 
           <div className="p-5 rounded-md">

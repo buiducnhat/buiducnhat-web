@@ -1,22 +1,22 @@
 ---
-title: The most useful VS Code extensions for developers
+title: Các extension VS Code hữu ích cho lập trình viên
 authors: [buiducnhat]
 tags: ['tools', 'vscode', 'trick']
 ---
 
-**Visual Studio Code** a.k.a **VS Code**, released by ***Microsoft***, is one of the most popular open source code editors for developers.
+**Visual Studio Code** hay **VS Code**, được phát hành bởi **_Microsoft_**, là một trong những công cụ soạn thảo code tốt nhất hiện nay
 
-**VS Code** helps developers increase productivity in the execution of projects. One of the reasons make **VS Code** popular is its variety of available extensions in <a href="https://marketplace.visualstudio.com/VSCode" target="_blank" rel="noreferrer">marketplace</a>.
+**VS Code** giúp các lập trình viên tăng năng suất trong quá trình làm việc với source code. Một trong những lý do khiến **VS Code** trở nên phổ biến là sự đa dạng của các extension có sẵn trong <a href="https://marketplace.visualstudio.com/VSCode" target="_blank" rel="noreferrer">marketplace</a>.
 
-Today, I am going to list some extensions that I usually use.
+Hôm nay, mình sẽ liệt kê một số extension mà mình thường sử dụng và thấy hữu ích :D.
 
 ![banner](./img/banner.jpeg)
 
 <!--truncate-->
 
-_Note: The below extensions are useful for the most developers in any field, not just for Web App or Embedded developers. So in the future I will have other articles about extensions suitable for specific areas._
+_Lưu ý: Các extension dưới đây hữu ích cho hầu hết các lập trình viên trong hầu hết lĩnh vực liên quan đến code, không chỉ cho lập trình viên Web App hay nhúng,... . Vì vậy trong tương lai mình sẽ có những bài viết khác về các extension phù hợp với các lĩnh vực cụ thể nếu được các bạn ủng hộ ^^._
 
-They are:
+Các extension nào nhỉ?
 
 - [GitLens](#gitlens)
 - [Visual Studio IntelliCode](#visual-studio-intellicode)
@@ -27,72 +27,87 @@ They are:
 
 ## GitLens
 
-**VS Code** has already integrated built in `git` GUI, it's very helpful for developers because nowaday `git` is absolutely necessary for them.
+**VS Code** đã tích hợp sẵn `git` với giao diện cơ bản (`GUI`), nó rất hữu ích cho các lập trình viên vì hiện nay `git` là một trong những công cụ không thể thiếu.
+
+Tuy nhiên, `git` có rất nhiều tính năng mà `GUI` trên **VS Code** không thể hỗ trợ. Ví dụ như `git blame` hay `git log`, hay xem lịch sử thay đổi của một file, người commit,... .
+
+Do đó, `GitLens` ra đời để bổ sung những tính năng đó ngay trong **VS Code**.
 
 ![gitlens-image](https://raw.githubusercontent.com/gitkraken/vscode-gitlens/main/images/docs/gitlens-logo-anybg.png)
 
-When working with other team members, GitLens is a very good choice with its features:
+Khi làm việc với các thành viên khác trong nhóm, `GitLens` là một lựa chọn tuyệt vời với những tính năng như:
 
-- Revision navigation through file history.
-- A current line blame annotation at the end of the line showing the commit.
-- A status bar blame annotation for the commit and author who last modified the current line.
+- Di chuyển đến các phiên bản khác nhau của một file.
+- So sánh 2 phiên bản khác nhau của một file.
+- So sánh 2 nhánh khác nhau.
+- Hiển thị thông tin commit của dòng hiện tại ở cuối dòng.
+- Hiển thị thông tin commit của dòng hiện tại ở thanh trạng thái.
+- Xem lịch sử commit, người commit, thời gian commit dễ dàng
+- Cung cấp đồ thị biểu diễn lịch sử commit của repository.
 
-You can find it <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank" rel="noreferrer">here</a> (in Visual Studio Code marketplace).
+và chi tiết hơn các bạn có thể xem thêm <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank" rel="noreferrer">tại đây</a> (in Visual Studio Code marketplace).
 
 ## Visual Studio IntelliCode
 
-At the time I write this article, `Visual Studio IntelliCode` extension has the 8th most downloads in marketplace. So it became indispensable for developers.
+Tại thời điểm mình viết bài này, `Visual Studio IntelliCode` extension có số lượt tải xuống nhiều thứ 8 trong marketplace, nó chứng tỏ rằng đây là extension được tin dùng bởi rất nhiều lập trình viên.
 
 ![visual-studio-intellicode](https://go.microsoft.com/fwlink/?linkid=2006041)
 
-This extension helps us writing code quickly by adding a star before the code snippets (it means this code had used very very much before by developers over the world).
+Extension này giúp chúng ta viết code nhanh hơn bằng cách thêm một dấu sao trước các code snippets (nghĩa là code này đã được sử dụng rất nhiều lần trước đó bởi các lập trình viên trên thế giới mà **VS Code** đã thu thập được).
 
-You can install this extension <a href="https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode" target="_blank" rel="noreferrer">here</a>.
+Các bạn có thể cài đặt extension này <a href="https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode" target="_blank" rel="noreferrer">tại đây</a>.
 
 ## Project Manager
 
-Normally, each project is a `folder/directory` of your OS. Each time you want to open your project, you have to open the corresponding `folder/directory` and of course, you have to remember its path.
+Thông thường, mỗi dự án là một `folder/directory` trên hệ bộ nhớ của máy tính bạn. Mỗi khi bạn muốn mở source code lên, bạn sẽ phải cần mở `folder/directory` tương ứng và quan trọng bạn phải nhớ đường dẫn của nó.
 
-When the number of your projects increases, or you save them in a disorganized manner, you usually forget where they locate.
+Với nhiều người thì việc này không phải là vấn đề gì, nhưng với những người làm việc với nhiều dự án, hay không quen với việc sắp xếp ngăn nắp thì việc này sẽ trở nên khó khăn hơn.
 
 ![project-manager-image](https://raw.githubusercontent.com/alefragnani/vscode-project-manager/master/images/vscode-project-manager-logo-readme.png)
 
-This problem can be easily solved with `Project Manager` extension. You can save your projects like folder/directory or even your workspaces. Your projects will be visible in the side bar like this
+Vấn đề này có thể được giải quyết dễ dàng bằng cách sử dụng extension `Project Manager`. Bạn có thể lưu trữ các dự án của mình như `folder/directory` hoặc `workspace`. Các dự án của bạn sẽ được hiển thị trong thanh `sidebar` như hình dưới
 
 ![side bar](./img/sidebar.png)
 
-You can install this extension <a href="https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager" target="_blank" rel="noreferrer">here</a>.
+Và sau đó,... chỉ cần một cú click chuột là folder chứa source code được mở ra dễ dàng :D
+
+Bạn có thể cài đặt extension này <a href="https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager" target="_blank" rel="noreferrer">tại đây</a>.
 
 ## vscode-icons
 
-This extension is just an `icon theme` for **VS Code**. It supplies icon for the folders/directories and files in the explorer sidebar of **VS Code**.
+Extension này chỉ là một `icon theme` cho **VS Code**. Nó cung cấp các biểu tượng cho các thư mục và file trong thanh `sidebar`, hay những khu vực hiển thị folder, file của **VS Code**.
 
 ![vscode-icons-image](https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/images/screenshot.gif)
 
-There are many good choice `icon theme` for us at marketplace, the reason why I recommend this because `vscode-icons` is the official extension of `Microsoft` (who made **VS Code**).
+Có rất nhiều lựa chọn `icon theme` tốt cho chúng ta tại marketplace, lý do mình khuyên bạn nên sử dụng `vscode-icons` là vì nó là một extension chính thức của `Microsoft` (cha đẻ của **VS Code**).
 
-You can install this extension <a href="https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons" target="_blank" rel="noreferrer">here</a>.
+Bạn có thể cài đặt extension này <a href="https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons" target="_blank" rel="noreferrer">tại đây</a>.
 
-Of course, you can easily find out for your favorite themes at marketplace by type `icon` into the search input. The next step you just select and install them.
+Tất nhiên, đây chỉ là một trong số các `icon theme` trong `marketplace` của **VS Code**, các bạn hoàn toàn có thể lựa chọn các theme khác phù hợp với sở thích cá nhân, nổi bật có thể kể đến `Material Icon Theme` với số lượt tải nhiều nhất.
 
 ## Bracket Pair Colorizer 2 (deprecated)
 
-> _Note: This extension is now deprecated and no longer being supported. Instead, this is now a built in feature of `**VS Code**`._
-> Have you ever known about _LISP_?
+> _Lưu ý: Extension này không còn được hỗ trợ tại `marketplace` nữa. Thay vào đó, nó là một tính năng được tích hợp sẵn trong `**VS Code**`._
 
-![bracket-hells](https://image.slidesharecdn.com/lisppivorak-190913103822/85/lisplots-of-irritating-superfluous-parentheses-3-320.jpg?cb=1568371117)
+(Mấy anh em Python có thể skip phần này =)))
 
-When your code block increase too big, you use too many brackets, you difficultly find the rights bracket pairs, this extension will help you.
+> Bạn đã từng biết đến _LISP_ chưa?
 
-Look at this image and you will understand how it works
+![bracket hells](https://image.slidesharecdn.com/lisppivorak-190913103822/85/lisplots-of-irritating-superfluous-parentheses-3-320.jpg?cb=1568371117)
+
+Với `Javascipt` hẳn mọi người đã nghe về `Callback hell`, thì ở đây chúng ta có thể tạm gọi là `Bracket hell` =)).
+
+Thời điểm trước, có lần số lượng block code của mình quá lớn, với các cặp dấu ngoặc `{}, [], ()`,... và chúng cũng cùng màu với nhau, rất khó để phân biệt các cặp dấu tương ứng.
+
+Kể cả với `HTML`, việc tìm đúng những thẻ đóng mở cũng gây không ít khó khăn, khi mà `div` lại lồng `div`, `span` lại lồng `span`.
+
+Ảnh dưới sẽ mô tả cách hoạt động của tính năng này :D
 
 ![bracket-colorizer-2-image](https://github.com/CoenraadS/Bracket-Pair-Colorizer-2/raw/HEAD/images/example.png)
 
-~~You can install this extension <a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2" target="_blank" rel="noreferrer">here</a>.~~ (deprecated).
+Hiện tại, bạn có thể bật tính năng `Bracket pair colorizer` như một tính năng được tích hợp sẵn trong `**VS Code**`.
 
-Now you can enable `Black pair colorizer` as a native feature in `**VS Code**`.
-
-Just open your `settings.json` of your `**VS Code**` and add two following lines:
+Chỉ cần mở file `settings.json` của `**VS Code**` và thêm 2 dòng sau vào
 
 ```json
 {
@@ -105,12 +120,14 @@ Just open your `settings.json` of your `**VS Code**` and add two following lines
 
 ## indent-rainbow
 
-Like `Bracket Pair Colorizer 2`, `indent-rainbow` help us easily when see the code blocks, especially for `Python` developer
+Giống như `Bracket Pair Colorizer 2`, `indent-rainbow` giúp chúng ta dễ dàng nhìn thấy các block code, phần này thì đặc biệt dành cho các lập trình viên `Python` :)).
+
+Nhìn ảnh mô tả là các bạn biết ngay công dụng của nó :D
 
 ![indent-rainbow-image](https://raw.githubusercontent.com/oderwat/vscode-indent-rainbow/master/assets/example.png)
 
-You can install this extension <a href="https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow" target="_blank" rel="noreferrer">here</a>.
+Bạn có thể cài đặt extension này <a href="https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow" target="_blank" rel="noreferrer">tại đây</a>.
 
-_Note: the last both extensions can be customized, you should read their documents at their homepage to continue._
+_Lưu ý: 2 extension trên có thể được tinh chỉnh nhiều hơn, các bạn nên đọc tài liệu của chúng để có thể tùy chỉnh hợp với sở thích._
 
-These are the best extensions for me, and it totally from my opinion, so if you know more helpful extensions, recommend for us!
+Đó là những extension mà mình sử dụng, nếu có thêm gì thì mình sẽ cập nhật thêm vào bài viết này, mong được mọi người ủng hộ mình sẽ làm tiếp tục về những extension với từng lĩnh vực cụ thể hơn.

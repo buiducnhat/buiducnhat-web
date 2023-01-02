@@ -1,0 +1,141 @@
+---
+title: Code bẩn và kẻ thù của chúng
+authors: [buiducnhat]
+tags: ['code', 'trick', 'clean_code']
+---
+
+Trong cuộc sống của các lập trình viên, những dòng code là thứ họ tiếp xúc còn nhiều hơn chính chiếc giường mà họ nằm, nhiều hơn cả thời gian họ dành cho người yêu hay người thân của mình. Vậy có nên hay không việc thường xuyên "dọn dẹp" những đoạn code đó trong quá trình làm việc?
+
+![banner](./img/banner.jpeg)
+
+<!--truncate-->
+
+## Tại sao lại gọi là "code bẩn"?
+
+Thật ra, không có khái niệm "code bẩn" hay "code sạch" gì ở đây cả, mình chỉ gọi thế giúp mọi người dễ hình dung ra đặc điểm của những đoạn code, hay thậm chí file code, project code đó mà thôi
+
+Ví dụ như, một đoạn code như sau với ngôn ngữ kinh điển `C++`:
+
+```cpp
+int oddsum(int a[], int n)
+{
+  int s=0;
+   for (int i = 0; i <n;i++)
+  {
+   if (a[i] % 2 == 1)
+    {
+    s = s+a[i];}
+  }
+return s;
+}
+```
+
+Đoạn code trên là một `function` đơn giản để tính tổng các số lẻ của một mảng với đầu vào là một mảng số nguyên và số phần tử của nó
+
+Kết quả thì đoạn code trên cho ra kết quả như mong đợi vì với _syntax_ hay _logic_ nó không hề sai, nhưng đoạn code trên có rất nhiều điểm không ổn, ví dụ như:
+
+- Tên biến không có ý nghĩa
+- Không có comment
+- Không có kiểm tra đầu vào
+- Và đặc biệt là format code lộn xộn, các dấu tab đầu dòng không khớp,...
+
+Nếu làm việc một mình, dùng _git_ một mình với source code do mình bạn quản lý, thì vấn đề này không quá to tát.
+
+Nhưng hãy cứ tưởng tượng việc 3, 4 tháng hay thậm chí 1 năm sau nhìn lại, bạn có dám maintain những đoạn code như vậy mà do chính mình viết lên không?
+
+Và nếu bạn làm việc trong một team, thì vấn đề này sẽ trở nên rất khó khăn với những developer khác, đặc biệt là khi bạn không còn làm trong team đó nữa.
+Nhiều câu hỏi sẽ được đặt ra khi xảy ra vấn đề đó: `a[]` là gì vậy, what is `n`???, and `s`????
+
+Đó mới chỉ là đoạn code chưa đầy 15 dòng, vậy một project to đến vài chục file, hay cả trăm file, việc maintain code như vậy gặp khó khăn thế nào?
+
+## Giải pháp "cứu cánh" cho vấn đề trên
+
+`Clean code` là một thuật ngữ thường được giới _Coder_, _Developer_ sử dụng với đặc điểm đoạn code ngược với đoạn code trên, ví dụ như:
+
+Tất nhiên **Clean code** không chỉ là việc đặt tên biến hợp lý, hay format code đúng chuẩn, mà nó còn bao gồm việc **design structure** cho project, hay việc viết **document** đầy đủ,...
+
+Vì vậy bài viết này mình chỉ đề cập đến **Clean code** ở mức độ cơ bản, đơn giản, và dễ hiểu nhất, hay cụ thể là trong một vài _function_ nhỏ lẻ trong 1 _file_ code.
+
+### 1. Đặt tên có ý nghĩa
+
+Đặt tên biến có ý nghĩa là một trong những điểm quan trọng nhất trong việc viết code, vì nó giúp cho người đọc code dễ hiểu hơn, và dễ maintain hơn.
+
+Với mình, mình luôn có những quy ước ngầm để đặt tên cho biến, hàm, class, hay kể cả file ngay từ lúc viết dòng đầu tiên trong project, và nhiều người khác cũng làm như vậy:
+
+- Với các **variable** (biến), hay **attribute** (thuộc tính trong **class**) thông thường, chúng sẽ được định nghĩa bằng một danh từ có nghĩa, ví dụ như `fullName`, `age`, `number_of_wheel`.
+- Với các **variable**, **attribute** có kiểu dữ liệu là `boolean`, chúng sẽ được định nghĩa bằng một danh từ có nghĩa, và có thêm tiền tố `is`, `has`, `can`,... ví dụ như `isMale`, `hasWheel`, `can_fly`.
+- Với các **variable**, **attribute** có kiểu dữ liệu liên quan đến `array`, `list`, `set`,... chúng sẽ được định nghĩa bằng một danh từ số nhiều có nghĩa, hoặc danh từ và có thêm tiền tố hay hậu tố `list`, `array`, `set`,... ví dụ như `students`, `car_list`, `setOfNumber`,....
+- Với tên các **function** (hàm), **method** (phương thức trong **class**), chúng sẽ được định nghĩa bằng một động từ có nghĩa, ví dụ như `getFullName()`, `calculateAge()`, `get_number_of_wheel()`, `toggleLed()`.
+
+Khi đó nhìn vào các đoạn code, bạn có thể dễ dàng hơn trong việc đọc source code, và cũng đỡ đau đầu hơn mỗi khi nghĩ cách đặt tên cho chúng.
+
+### 2. Đặt tên theo quy tắc
+
+Vào thẳng vấn đề luôn, việc đặt tên có cú pháp cũng dựa trên một số convension chung như:
+
+1. Quy tắc `camelCase`: ví dụ như `fullName`, `age`, `isMale`, `carList`, `calculateAge()`, `toggleLed()`, thường sử dụng để đặt tên cho **biến, hàm, thuộc tính hay phương thức** trong _hầu hết_ ngôn ngữ lập trình.
+2. Quy tắc `PascalCase`: ví dụ như `Student`, `Car`, `CarList`, `CalculateAge()`, `ToggleLed()`, thường sử dụng để đặt tên cho **class, interface, enum, struct, namespace**, hay cũng được sử dụng để đạt tên cho thuộc tính, phương thức với ngôn ngữ lập trình `C#`.
+3. Quy tắc `snake_case`, hay còn gọi là `under_score`: ví dụ như `full_name`, `age`, `is_male`, `car_list`, `calculate_age()`, `toggle_led()`, sử dụng giống như `camelCase`.
+4. Quy tắc `kebab-case`: thường dùng trong đặt tên cho **file** hơn là việc đặt tên cho biến, hàm hay class.
+
+Và tất nhiên, quy tắc, hay quy ước cũng là do những người "tiền bối" của chúng ta nghĩ ra, nó không phải là một luật lệ, nếu bạn muốn sáng tạo, thì bạn có thể làm kiểu a, kiểu b, nhưng hãy đảm bảo hiệu quả của sự "sáng tạo" đó.
+
+### 3. Viết code theo chuẩn
+
+Để gọi là "chuẩn" thì không ai dám nhận đoạn code này đã chuẩn, hay đẹp nhất, vì nó là một đặc điểm không thể định lượng được, nhưng mình vẫn muốn nói về nó, vì nó là một trong những điểm quan trọng trong việc viết code.
+
+Ví dụ những dấu cách, dấu tab, dấu xuống dòng, dấu chấm phẩy, dấu ngoặc,... đều là những điều cần phải tuân theo 1 chuẩn (format) nào đó, để khi cùng làm việc với một đoạn code, bạn và người khác đều sẽ tránh gặp phải vấn đề **conflict** chẳng hạn.
+
+Ngày nay, một số **IDE**/**Text Editor** hiện đại thường được tích hợp sẵn một công cụ để format code theo chuẩn, ví dụ như **Visual Studio Code** có sẵn tool để format cho rất rất nhiều ngôn ngữ khác nhau. Hay khi bạn làm việc với **project** viết bằng `Javascript`, `Prettier` là một công cụ không thể thiếu
+
+Các công cụ như vậy giúp code bạn tự động lùi vào trong, tự động thêm dấu cách, tự động thêm dấu chấm phẩy, tự động thêm dấu ngoặc,... một cách hợp lý, khoa học, và đẹp mắt.
+
+### 4. Comment code khi cần thiết
+
+**Comment code** là thứ nhiều người thường bỏ qua, vì nó tốn thêm thời gian trong quá trình viết code. Nhưng nếu những cách trên vẫn không giúp bạn hiểu được đoạn code, chứng tỏ những đoạn code đó rất khó, và không thể tường minh hơn được, thì lúc này **comment code** sẽ là một giải pháp tốt nhất.
+
+Với các ngôn ngữ khác nhau, sẽ có cách comment code khác nhau, tuy nhiên mục đích chung của việc comment code là để giải thích cho người đọc code của bạn biết, đoạn code đó làm gì, và tại sao lại làm như vậy.
+
+Vì vậy, nếu bạn thấy đoạn code của chính mình có thể gây khó đọc, hay chưa tường minh, đừng ngần ngại thêm vài dòng text để giải thích cho người đọc sau nhé!
+
+## Áp dụng vào ví dụ ban đầu
+
+Lý thuyết đã có, hãy thử cùng mình áp dụng vào đoạn "code bẩn" trên kia nhé:
+
+```cpp
+// Function to calculate sum of odd numbers in an array
+// Input: numbers - array of integers
+//        size - size of the array
+// Output: sum of odd numbers in the array
+int calSumOfOdd(int numbers[], int size)
+{
+  // Declare variable to store the result
+  int result = 0;
+
+  // Loop through the array
+  for (int i = 0; i < n; i++)
+  {
+    // Check if the number is odd
+    if (numbers[i] % 2 == 1)
+    {
+      result += 2;
+    }
+  }
+
+  return result;
+}
+```
+
+Tất nhiên, việc áp dụng quá nhiều quy tắc vào đoạn code nhỏ trên có vẻ hơi cồng kềnh, nhưng đó chỉ là ví dụ đơn giản để mọi người có thể thấy được sự khác biệt giữa "code bẩn" và "code sạch".
+
+## Kết luận
+
+Thực tế còn nhiều những cách để clean code như mình đã giới thiệu ở đầu bài, tuy nhiên bài viết ngắn gọn, mình chỉ tập trung vào những cách mà mình thấy hữu ích nhất, và dễ áp dụng nhất.
+
+Hy vọng bài viết này sẽ giúp bạn có thêm một số kinh nghiệm để viết code tốt hơn, và tránh được những lỗi "code bẩn".
+
+Nếu bạn có thắc mắc, hoặc muốn bổ sung thêm, hãy để lại comment bên dưới nhé!
+
+## Links
+
+- Banner: [https://i1.sndcdn.com/avatars-000089054537-j37dkh-t500x500.jpg](https://i1.sndcdn.com/avatars-000089054537-j37dkh-t500x500.jpg)
