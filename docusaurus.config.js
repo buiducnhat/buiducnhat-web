@@ -50,7 +50,8 @@ const config = {
         title: 'Bùi Đức Nhật',
         logo: {
           alt: 'Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo-light.png',
+          srcDark: 'img/logo-dark.png',
         },
         hideOnScroll: true,
         items: [
@@ -72,11 +73,6 @@ const config = {
           },
           { to: '/portfolio', label: 'Portfolio', position: 'left' },
           { to: '/about', label: 'About', position: 'left' },
-          {
-            href: 'https://github.com/buiducnhat/buiducnhat.me',
-            label: 'GitHub',
-            position: 'right',
-          },
           {
             type: 'localeDropdown',
             position: 'right',
