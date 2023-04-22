@@ -130,9 +130,9 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       algolia: {
-        appId: '910OS4PMJA',
-        apiKey: '5b562fa43586ae1cb2d043816f6d2e31',
-        indexName: 'buiducnhat.me',
+        appId: '7L0K0UP9DZ',
+        apiKey: '818de3be346ad79a1d0be2704fa38d85',
+        indexName: 'buiducnhat-github-io',
         contextualSearch: true,
         searchParameters: {},
         searchPagePath: 'search',
