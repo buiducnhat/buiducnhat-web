@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbuiducnhat_me=self.webpackChunkbuiducnhat_me||[]).push([[931],{8676:e=>{e.exports=JSON.parse('{"label":"trick","permalink":"/en/blogs/tags/trick","allTagsPath":"/en/blogs/tags","count":2}')}}]);

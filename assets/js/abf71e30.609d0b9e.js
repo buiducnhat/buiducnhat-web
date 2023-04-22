@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbuiducnhat_me=self.webpackChunkbuiducnhat_me||[]).push([[211],{2622:e=>{e.exports=JSON.parse('{"label":"clean_code","permalink":"/blogs/tags/clean-code","allTagsPath":"/blogs/tags","count":1}')}}]);
