@@ -20,7 +20,7 @@
     "description": "Navbar item with label GitHub"
   },
   "item.label.About": {
-    "message": "About",
+    "message": "Giới thiệu",
     "description": "Navbar item with label About"
   },
   "item.label.All tags": {

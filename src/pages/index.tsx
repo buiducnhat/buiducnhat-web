@@ -37,7 +37,7 @@ export default function Home(): JSX.Element {
         id: 'homepage.title',
         message: 'Home page',
       })}
-      description="Personal website of Bùi Đức Nhật, a developer, sharing about programming, technology, and life.">
+      description="Personal website of Bùi Đức Nhật, a software engineer, sharing about programming, technology, and life.">
       <main className="min-h-[70vh] bg-gradient-to-br md:bg-gradient-to-tr from-primary-300 to-gray-50 dark:from-primary-800 dark:to-gray-800">
         <div className="grid grid-cols-1 md:grid-cols-2 py-10 md:py-20">
           <div className="justify-self-center mx-3 md:justify-self-end flex flex-col shadow-2xl bg-primary-200 dark:bg-primary-900">
@@ -68,7 +68,7 @@ export default function Home(): JSX.Element {
               <Translate>Hello</Translate>
             </p>
             <p className="text-lg md:text-2xl">
-              <Translate>{`Here's who I am & what I do`}</Translate>
+              <Translate>{`What do you wanna find here?`}</Translate>
             </p>
 
             <div className="py-3 mb-5 flex space-x-3">

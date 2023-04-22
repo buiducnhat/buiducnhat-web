@@ -402,8 +402,8 @@
   "Hello": {
     "message": "Hello"
   },
-  "Here's who I am & what I do": {
-    "message": "Here's who I am & what I do"
+  "What do you wanna find here?": {
+    "message": "Ưhat do u ưanna find hể?"
   },
   "Blogs": {
     "message": "Blog"
@@ -412,7 +412,7 @@
     "message": "Projects"
   },
   "I am a developer from Viet Nam, I enjoy sharing about programming, technology, and life.": {
-    "message": "I am a developer from Viet Nam, I enjoy sharing about programming, technology, and life."
+    "message": "I am a Software Engineer from Viet Nam, I enjoy sharing about programming, technology, and life."
   },
   "homepage.title": {
     "message": "Home page"

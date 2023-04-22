@@ -402,8 +402,8 @@
   "Hello": {
     "message": "Hello"
   },
-  "Here's who I am & what I do": {
-    "message": "Đây là đâu? Đây là gì vậy?"
+  "What do you wanna find here?": {
+    "message": "Ưhat do u ưanna find hể?"
   },
   "Blogs": {
     "message": "Blog"
@@ -412,12 +412,12 @@
     "message": "Project"
   },
   "I am a developer from Viet Nam, I enjoy sharing about programming, technology, and life.": {
-    "message": "Mình là Nhật, một kỹ sư, một lập trình viên đam mê với lĩnh vực Công nghệ thông tin, cùng đó là sở thích chia sẻ kinh nghiệm, kiến thức về công nghệ, về công việc, học tập hay kể cả viết lách những thứ linh tinh..."
+    "message": "Đây là Nhật, một kỹ sư phần mềm (tạm nhận thế) có đam mê với lĩnh vực IT, cùng đó là sở thích chia sẻ kinh nghiệm, kiến thức về công nghệ, về công việc, học tập hay kể cả viết lách những thứ linh tinh..."
   },
   "homepage.title": {
     "message": "Trang chủ"
   },
   "Technical skills": {
-    "message": "Một số kỹ năng chuyên môn"
+    "message": "Những kỹ năng bá đạo của tôi là gì?"
   }
 }
