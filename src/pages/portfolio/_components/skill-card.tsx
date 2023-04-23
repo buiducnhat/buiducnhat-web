@@ -4,7 +4,7 @@ import { usePalette } from 'react-palette';
 
 export default function SkillCard({ img, name, url }: { img: string; name: string; url: string }) {
   const { data, loading, error } = usePalette(img);
-  console.log(data.vibrant);
+
   return (
     !!data.vibrant &&
     !loading &&

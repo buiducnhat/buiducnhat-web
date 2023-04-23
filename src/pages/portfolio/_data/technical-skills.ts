@@ -1,5 +1,4 @@
 export const technicalSkills = [
-  { name: 'AWS', img: '/img/technical-skills/aws.svg', url: 'https://aws.amazon.com/' },
   {
     name: 'Bash',
     img: '/img/technical-skills/bash.svg',
@@ -16,6 +15,7 @@ export const technicalSkills = [
     img: '/img/technical-skills/css.svg',
     url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
   },
+  { name: 'AWS', img: '/img/technical-skills/aws.svg', url: 'https://aws.amazon.com/' },
   {
     name: 'DotNetCore',
     img: '/img/technical-skills/dotnetcore.svg',
@@ -70,6 +70,11 @@ export const technicalSkills = [
   { name: 'NodeJS', img: '/img/technical-skills/nodejs.svg', url: 'https://nodejs.org/en/' },
   { name: 'NextJS', img: '/img/technical-skills/nextjs.svg', url: 'https://nextjs.org/' },
   {
+    name: 'TypeScript',
+    img: '/img/technical-skills/typescript.svg',
+    url: 'https://www.typescriptlang.org/',
+  },
+  {
     name: 'PostgreSQL',
     img: '/img/technical-skills/postgresql.svg',
     url: 'https://www.postgresql.org/',
@@ -81,6 +86,11 @@ export const technicalSkills = [
     img: '/img/technical-skills/tailwindcss.svg',
     url: 'https://tailwindcss.com/',
   },
+  {
+    name: 'Algolia',
+    img: '/img/technical-skills/algolia.svg',
+    url: 'https://www.algolia.com/',
+  },
   { name: 'Ubuntu', img: '/img/technical-skills/ubuntu.svg', url: 'https://ubuntu.com/' },
   {
     name: 'VSCode',
@@ -88,8 +98,23 @@ export const technicalSkills = [
     url: 'https://code.visualstudio.com/',
   },
   {
+    name: 'ElasticSearch',
+    img: '/img/technical-skills/elasticsearch.svg',
+    url: 'https://www.elastic.co/',
+  },
+  {
     name: 'CircleCI',
     img: '/img/technical-skills/circleci.svg',
     url: 'https://circleci.com/',
+  },
+  {
+    name: 'Flutter',
+    img: '/img/technical-skills/flutter.svg',
+    url: 'https://flutter.dev/',
+  },
+  {
+    name: 'Jenkins',
+    img: '/img/technical-skills/jenkins.svg',
+    url: 'https://www.jenkins.io/',
   },
 ];

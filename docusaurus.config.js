@@ -31,13 +31,13 @@ const config = {
           path: './data/series',
           sidebarPath: require.resolve('./series.sidebars.js'),
           routeBasePath: '/series',
-          editUrl: 'https://github.com/buiducnhat/buiducnhat.me',
+          editUrl: 'https://github.com/buiducnhat/buiducnhat.github.io',
         },
         blog: {
           path: './data/blogs',
           routeBasePath: '/blogs',
           showReadingTime: true,
-          editUrl: 'https://github.com/buiducnhat/buiducnhat.me',
+          editUrl: 'https://github.com/buiducnhat/buiducnhat.github.io',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -123,7 +123,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} buiducnhat.me`,
+        copyright: `Copyright © ${new Date().getFullYear()} buiducnhat`,
       },
       prism: {
         theme: lightCodeTheme,
