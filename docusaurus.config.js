@@ -22,38 +22,6 @@ const config = {
     locales: ['en', 'vi'],
   },
 
-  presets: [
-    [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          path: './data/series',
-          sidebarPath: require.resolve('./series.sidebars.js'),
-          routeBasePath: '/series',
-          editUrl: 'https://github.com/buiducnhat/buiducnhat.github.io',
-        },
-        blog: {
-          path: './data/blogs',
-          routeBasePath: '/blogs',
-          showReadingTime: true,
-          editUrl: 'https://github.com/buiducnhat/buiducnhat.github.io',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-        gtag: {
-          trackingID: process.env.GA_TRACKING_ID,
-          anonymizeIP: true,
-        },
-        googleAnalytics: {
-          trackingID: process.env.GA_TRACKING_ID,
-          anonymizeIP: true,
-        },
-      }),
-    ],
-  ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -66,12 +34,6 @@ const config = {
         },
         hideOnScroll: true,
         items: [
-          {
-            type: 'doc',
-            docId: 'index',
-            position: 'left',
-            label: 'Series',
-          },
           {
             type: 'dropdown',
             label: 'Blogs',
@@ -139,19 +101,55 @@ const config = {
       },
     }),
 
+  presets: [
+    [
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        docs: false,
+        blog: {
+          path: './data/blogs',
+          routeBasePath: '/blogs',
+          showReadingTime: true,
+          editUrl: 'https://github.com/buiducnhat/buiducnhat.github.io',
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+        gtag: {
+          trackingID: process.env.GA_TRACKING_ID,
+          anonymizeIP: true,
+        },
+        googleAnalytics: {
+          trackingID: process.env.GA_TRACKING_ID,
+          anonymizeIP: true,
+        },
+      }),
+    ],
+  ],
+
   plugins: [
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    async function myPlugin(context, options) {
+    async function myPlugin() {
       return {
         name: 'docusaurus-tailwindcss',
         configurePostCss(postcssOptions) {
-          // Appends TailwindCSS and AutoPrefixer.
           postcssOptions.plugins.push(require('tailwindcss'));
           postcssOptions.plugins.push(require('autoprefixer'));
           return postcssOptions;
         },
       };
     },
+
+    [
+      '@docusaurus/plugin-content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: 'useful-docker-stacks',
+        path: './data/useful-docker-stacks',
+        routeBasePath: '/useful-docker-stacks',
+        sidebarPath: require.resolve('./sidebars/useful-docker-stacks.sidebar.json'),
+      },
+    ],
   ],
 };
 
