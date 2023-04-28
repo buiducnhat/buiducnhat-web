@@ -3,10 +3,6 @@
     "message": "Bùi Đức Nhật",
     "description": "The title in the navbar"
   },
-  "item.label.Series": {
-    "message": "Series",
-    "description": "Navbar item with label Series"
-  },
   "item.label.Blogs": {
     "message": "Blogs",
     "description": "Navbar item with label Blogs"

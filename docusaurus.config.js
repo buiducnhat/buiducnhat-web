@@ -78,10 +78,6 @@ const config = {
                 label: 'Blog',
                 to: '/blogs',
               },
-              {
-                label: 'Series',
-                to: '/series',
-              },
             ],
           },
         ],
