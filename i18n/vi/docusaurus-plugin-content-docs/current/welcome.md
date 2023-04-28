@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Chào bạn đến với buiducnhat.github.io
+# Chào bạn đến với buiducnhat.dev
 
 Các **series** sẽ được cập nhật tại đây!!
 
