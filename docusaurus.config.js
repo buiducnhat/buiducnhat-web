@@ -7,7 +7,7 @@ require('dotenv').config();
 const config = {
   title: 'Bùi Đức Nhật',
   tagline: 'SOFTWARE ENGINEER',
-  url: 'https://buiducnhat.dev',
+  url: 'https://www.buiducnhat.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -15,7 +15,6 @@ const config = {
 
   organizationName: 'buiducnhat',
   projectName: 'buiducnhat-web',
-  trailingSlash: false,
 
   i18n: {
     defaultLocale: 'vi',
@@ -113,7 +112,7 @@ const config = {
           path: './data/blogs',
           routeBasePath: '/blogs',
           showReadingTime: true,
-          editUrl: 'https://github.com/buiducnhat/buiducnhat_web/edit/main/',
+          editUrl: 'https://github.com/buiducnhat/buiducnhat-web/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -150,6 +149,7 @@ const config = {
         path: './data/series/useful-docker-stacks',
         routeBasePath: '/series/useful-docker-stacks',
         sidebarPath: require.resolve('./sidebars/useful-docker-stacks.sidebar.json'),
+        editUrl: 'https://github.com/buiducnhat/buiducnhat-web/edit/main/',
       },
     ],
   ],
