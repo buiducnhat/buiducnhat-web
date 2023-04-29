@@ -14,7 +14,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   organizationName: 'buiducnhat',
-  projectName: 'buiducnhat.github.io',
+  projectName: 'buiducnhat-web',
   trailingSlash: false,
 
   i18n: {
@@ -42,6 +42,12 @@ const config = {
               { to: '/blogs', label: 'All blogs' },
               { to: '/blogs/tags', label: 'All tags' },
             ],
+            position: 'left',
+          },
+          {
+            type: 'dropdown',
+            label: 'Series',
+            items: [{ to: '/series/useful-docker-stacks/overview', label: 'Useful Docker Stacks' }],
             position: 'left',
           },
           { to: '/portfolio', label: 'Portfolio', position: 'left' },
@@ -141,8 +147,8 @@ const config = {
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       {
         id: 'useful-docker-stacks',
-        path: './data/useful-docker-stacks',
-        routeBasePath: '/useful-docker-stacks',
+        path: './data/series/useful-docker-stacks',
+        routeBasePath: '/series/useful-docker-stacks',
         sidebarPath: require.resolve('./sidebars/useful-docker-stacks.sidebar.json'),
       },
     ],
