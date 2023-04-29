@@ -91,6 +91,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['nginx'],
       },
       algolia: {
         appId: process.env.ALGOLIA_APP_ID,
