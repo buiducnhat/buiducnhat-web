@@ -46,7 +46,9 @@ const config = {
           {
             type: 'dropdown',
             label: 'Series',
-            items: [{ to: '/series/useful-docker-stacks/overview', label: 'Useful Docker Stacks' }],
+            items: [
+              { to: '/series/useful-docker-stacks/overview', label: 'Các stack Docker hữu ích' },
+            ],
             position: 'left',
           },
           { to: '/portfolio', label: 'Portfolio', position: 'left' },
