@@ -1,5 +1,5 @@
 {
-  "index_name": "buiducnhat-github-io",
+  "index_name": "buiducnhat-web",
   "start_urls": ["https://buiducnhat.dev/"],
   "selectors": {
     "lvl0": {

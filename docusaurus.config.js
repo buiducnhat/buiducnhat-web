@@ -88,9 +88,9 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       algolia: {
-        appId: '7L0K0UP9DZ',
-        apiKey: '818de3be346ad79a1d0be2704fa38d85',
-        indexName: 'buiducnhat-github-io',
+        appId: process.env.ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
+        indexName: process.env.ALGOLIA_INDEX_NAME,
         contextualSearch: true,
         searchParameters: {},
         searchPagePath: 'search',
@@ -107,7 +107,7 @@ const config = {
           path: './data/blogs',
           routeBasePath: '/blogs',
           showReadingTime: true,
-          editUrl: 'https://github.com/buiducnhat/buiducnhat.github.io',
+          editUrl: 'https://github.com/buiducnhat/buiducnhat_web/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
