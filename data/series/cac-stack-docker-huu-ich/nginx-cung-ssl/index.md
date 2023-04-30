@@ -1,6 +1,6 @@
 ---
 title: Nginx cùng SSL
-tags: ['docker', 'nginx', 'ssl', 'https', 'webserver']
+tags: ['docker', 'docker-compose', 'nginx', 'ssl', 'https', 'webserver']
 ---
 
 Đây sẽ là stack đầu tiên mình muốn giới thiệu, nên cũng là stack khá đơn giản và phổ biến mà các dev hay sử dụng. Nó sẽ giúp bạn deploy các ứng dụng web của mình lên một **machine** (máy tính) một cách nhanh chóng và dễ dàng.
@@ -144,6 +144,10 @@ Như các bạn đã thấy, mình có config cho domain `chuoi.click`, và khi 
 :::note
 Ngoài serve file HTML như trên, các bạn hoàn toàn có thể proxy các request đến các service khác như `nodejs`, `php`,... hoặc các bạn có thể tạo thêm các file config khác trong `sites-available` và `sites-enabled` để config cho từng _domain_ khác nhau, nếu muốn thử thì coi như là bài tập thực hành nhé 😁.
 :::
+
+Tất nhiên, source code example mình sẽ để trên repo này nhé:
+
+[https://github.com/buiducnhat/useful-docker-stacks/tree/main/nginx-with-ssl](https://github.com/buiducnhat/useful-docker-stacks/tree/main/nginx-with-ssl)
 
 ## Tham khảo
 

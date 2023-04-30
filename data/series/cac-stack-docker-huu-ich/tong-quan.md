@@ -1,5 +1,6 @@
 ---
 title: Tổng quan
+tags: [docker, docker-compose]
 ---
 
 ## Tại sao mình lại làm series này?
@@ -8,7 +9,7 @@ title: Tổng quan
 
 Trong quá trình học hỏi và làm việc với **Docker**, mình nhận ra sự tuyệt vời của công cụ này mà trước đó mình chưa biết đến, hoặc biết đến nhưng chưa có đủ thời gian, đủ kiến thức để vọc vạch.
 
-Như trước kia, mình chỉ dùng **Docker** cho việc Container hóa vài ứng dụng đơn giản, đặc biệt là các ứng dụng Web, chỉ với config vài dòng với các ứng dụng đơn giản như **NodeJs**, **React App**, **MySQL**,....
+Như trước kia, mình chỉ dùng **Docker** cho việc container hóa vài ứng dụng đơn giản, đặc biệt là các ứng dụng Web, chỉ với config vài dòng với các ứng dụng đơn giản như **NodeJs**, **React App**, **MySQL**,....
 
 Thú thực thì... trông cũng có vẻ ngầu đấy (vì khoe là làm việc với **Docker**) nhưng nó chả giúp ích gì cho mình ngoài việc đỡ phải cài thêm một số môi trường như **NodeJS**, **Database** (thứ mà mình đã cài trước đó 😂), bù lại mất công suy nghĩ thêm vấn đề về config _environment variables_ (biến môi trường), _persisting data_ (lưu lại dữ liệu khi container bị xóa), xem _logs_, hay thậm chí là fix một vài bug vặt trong quá trình runtime.
 
@@ -45,3 +46,7 @@ Tất nhiên câu trả lời sẽ luôn là "Everyone", tuy nhiên để cụ t
 Series mang tính chủ quan, tính tham khảo và hoàn toàn không có mục đích khoe khoang, hay làm màu gì cả, chỉ là mình muốn chia sẻ lại những gì mình đã học được, và cũng là để mình có thêm động lực để học hỏi thêm nhiều thứ mới mẻ hơn. Các kiến thức mình trình bày chưa bao giờ, và sẽ không bao giờ là "best", là tốt nhất, mà chỉ là "good enough" để các bạn có thể tham khảo, và có thể tự tìm hiểu thêm.
 
 Ở phía dưới bài viết, các bạn hoàn toàn có thể chỉnh sửa bài viết, và tạo **pull request** để mình ghi nhận lại những góp ý, đóng góp của các bạn. (Chức năng _comment_ hiện đang trong quá trình phát triển, lí do lượng người đọc chắc mới đếm trên đầu ngón tay 😂)
+
+Ngoài ra, toàn bộ example cho phần config các stack tiếp theo, mình sẽ để ở repo này trên github, nếu thấy hữu ích, các bạn có thể **star** repo này cũng như tạo **issue** để mình nhận ra khiếm khuyết của chúng nhé.
+
+Link repo: [https://github.com/buiducnhat/useful-docker-stacks](https://github.com/buiducnhat/useful-docker-stacks)
