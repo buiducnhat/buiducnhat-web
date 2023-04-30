@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.useful-docker-stacks.category.Các Stack Docker hữu ích": {
+    "message": "Useful Docker Stacks",
+    "description": "The label for category Các Stack Docker hữu ích in sidebar useful-docker-stacks"
+  }
+}

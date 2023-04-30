@@ -1,5 +1,6 @@
 ---
 title: Nginx cùng SSL
+tags: ['docker', 'nginx', 'ssl', 'https', 'webserver']
 ---
 
 Đây sẽ là stack đầu tiên mình muốn giới thiệu, nên cũng là stack khá đơn giản và phổ biến mà các dev hay sử dụng. Nó sẽ giúp bạn deploy các ứng dụng web của mình lên một **machine** (máy tính) một cách nhanh chóng và dễ dàng.

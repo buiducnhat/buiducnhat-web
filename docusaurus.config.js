@@ -18,7 +18,7 @@ const config = {
 
   i18n: {
     defaultLocale: 'vi',
-    locales: ['en', 'vi'],
+    locales: ['vi'],
   },
 
   themeConfig:
@@ -44,11 +44,8 @@ const config = {
             position: 'left',
           },
           {
-            type: 'dropdown',
+            to: '/series',
             label: 'Series',
-            items: [
-              { to: '/series/useful-docker-stacks/overview', label: 'Các stack Docker hữu ích' },
-            ],
             position: 'left',
           },
           { to: '/portfolio', label: 'Portfolio', position: 'left' },
@@ -148,10 +145,10 @@ const config = {
       '@docusaurus/plugin-content-docs',
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       {
-        id: 'useful-docker-stacks',
-        path: './data/series/useful-docker-stacks',
-        routeBasePath: '/series/useful-docker-stacks',
-        sidebarPath: require.resolve('./sidebars/useful-docker-stacks.sidebar.json'),
+        id: 'cac-stack-docker-huu-ich',
+        path: './data/series/cac-stack-docker-huu-ich',
+        routeBasePath: '/series/cac-stack-docker-huu-ich',
+        sidebarPath: require.resolve('./sidebars/cac-stack-docker-huu-ich.json'),
         editUrl: 'https://github.com/buiducnhat/buiducnhat-web/edit/main/',
       },
     ],

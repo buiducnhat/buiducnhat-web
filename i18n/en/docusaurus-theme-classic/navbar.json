@@ -11,10 +11,6 @@
     "message": "Portfolio",
     "description": "Navbar item with label Portfolio"
   },
-  "item.label.GitHub": {
-    "message": "GitHub",
-    "description": "Navbar item with label GitHub"
-  },
   "item.label.About": {
     "message": "About",
     "description": "Navbar item with label About"
@@ -26,5 +22,13 @@
   "item.label.All blogs": {
     "message": "All blogs",
     "description": "Navbar item with label All blogs"
+  },
+  "logo.alt": {
+    "message": "Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Series": {
+    "message": "Series",
+    "description": "Navbar item with label Series"
   }
 }
