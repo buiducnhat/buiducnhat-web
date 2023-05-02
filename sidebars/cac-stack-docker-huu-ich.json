@@ -4,7 +4,7 @@
       "type": "category",
       "label": "Các Stack Docker hữu ích",
       "collapsed": false,
-      "items": ["tong-quan", "nginx-cung-ssl/index"]
+      "items": ["tong-quan", "nginx-cung-ssl/index", "mosquitto-cung-ssl/index"]
     }
   ]
 }
