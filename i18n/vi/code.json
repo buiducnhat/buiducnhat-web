@@ -411,9 +411,6 @@
   "Projects": {
     "message": "Project"
   },
-  "I am a developer from Viet Nam, I enjoy sharing about programming, technology, and life.": {
-    "message": "Đây là Nhật, một kỹ sư phần mềm (tạm nhận thế) có đam mê với lĩnh vực IT, cùng đó là sở thích chia sẻ kinh nghiệm, kiến thức về công nghệ, về công việc, học tập hay kể cả viết lách những thứ linh tinh..."
-  },
   "homepage.title": {
     "message": "Trang chủ"
   },
@@ -423,9 +420,6 @@
   "List Series": {
     "message": "Danh sách Series"
   },
-  "Read more": {
-    "message": "Đọc thêm"
-  },
   "theme.NavBar.navAriaLabel": {
     "message": "Main",
     "description": "The ARIA label for the main navigation"
@@ -433,5 +427,11 @@
   "theme.docs.sidebar.navAriaLabel": {
     "message": "Docs sidebar",
     "description": "The ARIA label for the sidebar navigation"
+  },
+  "I'm Nhat, a Software Engineer from Vietnam, with strong passion for IT. I love to share my knowledge, experience about technology, work, learning and also to write anything.": {
+    "message": "Đây là Nhật, một Software Engineer (tạm nhận thế) có đam mê với lĩnh vực IT, cùng đó là sở thích chia sẻ kinh nghiệm, kiến thức về công nghệ, về công việc, học tập hay kể cả viết lách những thứ linh tinh..."
+  },
+  "Read now": {
+    "message": "Đọc ngay"
   }
 }

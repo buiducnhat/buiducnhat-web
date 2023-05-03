@@ -411,9 +411,6 @@
   "Projects": {
     "message": "Projects"
   },
-  "I am a developer from Viet Nam, I enjoy sharing about programming, technology, and life.": {
-    "message": "I am a Software Engineer from Viet Nam, I enjoy sharing about programming, technology, and life."
-  },
   "homepage.title": {
     "message": "Home page"
   },
@@ -423,9 +420,6 @@
   "List Series": {
     "message": "List Series"
   },
-  "Read more": {
-    "message": "Read more"
-  },
   "theme.NavBar.navAriaLabel": {
     "message": "Main",
     "description": "The ARIA label for the main navigation"
@@ -433,5 +427,11 @@
   "theme.docs.sidebar.navAriaLabel": {
     "message": "Docs sidebar",
     "description": "The ARIA label for the sidebar navigation"
+  },
+  "I'm Nhat, a Software Engineer from Vietnam, with strong passion for IT. I love to share my knowledge, experience about technology, work, learning and also to write anything.": {
+    "message": "I'm Nhat, a Software Engineer from Vietnam, with strong passion for IT. I love to share my knowledge, experience about technology, work, learning and also to write anything."
+  },
+  "Read now": {
+    "message": "Read now"
   }
 }

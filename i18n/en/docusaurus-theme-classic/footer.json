@@ -26,5 +26,13 @@
   "link.item.label.Github": {
     "message": "Github",
     "description": "The label of footer link with label=Github linking to https://github.com/buiducnhat"
+  },
+  "link.item.label.Series": {
+    "message": "Series",
+    "description": "The label of footer link with label=Series linking to /series"
+  },
+  "link.item.label.Portfolio": {
+    "message": "Portfolio",
+    "description": "The label of footer link with label=Portfolio linking to /portfolio"
   }
 }

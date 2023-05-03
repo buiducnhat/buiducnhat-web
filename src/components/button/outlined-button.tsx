@@ -2,24 +2,16 @@ import React from 'react';
 import { ButtonProps } from 'react-html-props';
 import { twMerge } from 'tailwind-merge';
 
-import styles from './button.module.css';
-
 interface MyButtonProps extends ButtonProps {
   isLoading?: boolean;
-  hasShadow?: boolean;
+  isShadow?: boolean;
+  isBland?: boolean;
 }
 
-function OutlinedButton({
-  isLoading,
-  hasShadow: isShadow,
-  children,
-  className,
-  ...rest
-}: MyButtonProps) {
+function OutlinedButton({ isLoading, isShadow, children, className, ...rest }: MyButtonProps) {
   return (
     <button
       className={twMerge(
-        styles.ripple,
         'flex cursor-pointer items-center justify-center px-5 py-2.5 rounded-md font-semibold ring-1 ring-primary-500 text-primary-500 bg-transparent hover:text-white hover:bg-primary-400 duration-200',
         isShadow &&
           'shadow-md shadow-primary-300 dark:shadow-primary-700 hover:shadow-lg hover:shadow-primary-300 dark:hover:shadow-primary-700',
