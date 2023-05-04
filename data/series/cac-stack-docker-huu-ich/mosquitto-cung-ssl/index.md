@@ -70,8 +70,6 @@ Nếu có điều kiện, các bạn nên kiếm một con VPS ram tầm 4GB đ�
 
 ### File mosquitto.config
 
-Ở đây mình sẽ ghi đè luôn config mặc định của **nginx**, hoặc các bạn có thể tạo thêm các file trong `sites-available` và `sites-enabled` để config cho từng _domain_ khác nhau, mình sẽ không hướng dẫn ở đây, các bạn có thể tìm kiếm trên google nhé.
-
 ```bash
 # 3 dòng tiếp theo là optional nhé, trong trường hợp các bạn không cần log
 persistence true
