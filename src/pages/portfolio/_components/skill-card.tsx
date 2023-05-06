@@ -11,12 +11,12 @@ export default function SkillCard({ img, name, url }: { img: string; name: strin
     !error && (
       <Link
         href={url}
-        className={`bg-white relative w-11 h-11 md:w-20 md:h-20 flex justify-center items-center m-1 rounded-xl`}>
+        className={`relative m-1 flex h-11 w-11 items-center justify-center rounded-xl bg-white md:h-20 md:w-20`}>
         <div
           style={{ backgroundColor: data.lightVibrant }}
-          className={`absolute top-0 opacity-30 hover:opacity-50 w-full h-full rounded-xl`}
+          className={`absolute top-0 h-full w-full rounded-xl opacity-30 hover:opacity-50`}
         />
-        <img className="w-10 h-10 md:w-16 md:h-16" src={img} alt={name} />
+        <img className="h-10 w-10 md:h-16 md:w-16" src={img} alt={name} />
       </Link>
     )
   );

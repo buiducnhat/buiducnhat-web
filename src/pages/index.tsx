@@ -3,13 +3,13 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import Translate, { translate } from '@docusaurus/Translate';
-import { Button, OutlinedButton } from '@site/src/components/button';
 import {
   FaGithub as GithubIcon,
   FaLinkedin as LinkedinIcon,
   FaFacebook as FacebookIcon,
   FaEnvelope as EmailIcon,
 } from 'react-icons/fa';
+import HomeButton from './_components/button';
 
 const socialData = [
   {
@@ -43,56 +43,58 @@ export default function Home(): JSX.Element {
         message: 'Home page',
       })}
       description="Trang web cá nhân của Bùi Đức Nhật, nơi viết lách, chia sẻ kiến thức IT, công nghệ hay cuộc sống">
-      <main className="min-h-[70vh] bg-bland-grad">
-        <div className="grid grid-cols-1 md:grid-cols-2 py-10 md:py-20">
-          <div className="justify-self-center mx-3 md:justify-self-end flex flex-col shadow-2xl bg-bland-200 dark:bg-bland-900">
-            <div className="flex flex-col px-10 pt-10 justify-center items-center">
+      <main className="bg-bland-grad min-h-[70vh]">
+        <div className="grid grid-cols-1 py-10 md:grid-cols-2 md:py-20">
+          <div className="mx-3 flex flex-col justify-self-center bg-bland-200 shadow-2xl dark:bg-bland-900/80 md:justify-self-end">
+            <div className="flex flex-col items-center justify-center px-10 pt-10">
               <img
-                className="rounded-full w-56 h-56 md:w-64 md:h-64 mb-10"
+                className="mb-10 h-56 w-56 rounded-full duration-200 hover:ring-2 hover:ring-primary-600 md:h-64 md:w-64"
                 src="/img/avatar.jpeg"
                 alt="cover"
               />
-              <h1 className="text-center mb-5 text-bland-900 dark:text-bland-50">
+              <h1 className="mb-5 select-none text-center text-bland-900 duration-200 hover:text-primary-600 dark:text-bland-50 dark:hover:text-primary-500">
                 {siteConfig.title}
               </h1>
-              <span className="w-1/5 p-0.5 bg-bland-600 dark:bg-bland-100 mb-5"></span>
-              <p className="text-center tracking-[.25em]">{siteConfig.tagline}</p>
+              <span className="mb-5 w-1/5 bg-bland-600 p-0.5 dark:bg-bland-100"></span>
+              <p className="select-none text-center tracking-[.25em] hover:text-primary-600 dark:hover:text-primary-500">
+                {siteConfig.tagline}
+              </p>
             </div>
 
-            <div className="w-full flex justify-evenly py-1 space-x-3 mt-5 bg-white dark:bg-gray-800">
+            <div className="mt-5 flex w-full justify-evenly space-x-3 bg-white py-1 dark:bg-gray-800">
               {socialData.map((social, index) => (
                 <Link
                   key={index}
                   href={social.url}
-                  className="flex justify-center items-center p-2 hover:bg-bland-500 rounded-full group">
-                  <social.Icon className="w-6 h-6 text-bland-500 group-hover:text-bland-50" />
+                  className="group flex items-center justify-center rounded-full p-2 duration-200 hover:bg-primary-600">
+                  <social.Icon className="h-6 w-6 text-bland-500 duration-200 group-hover:text-white" />
                 </Link>
               ))}
             </div>
           </div>
 
-          <div className="p-5 md:p-10 max-w-md justify-self-center md:justify-self-start">
-            <p className="text-6xl md:text-8xl lg:text-9xl font-bold text-bland-900 dark:text-bland-50">
+          <div className="max-w-md justify-self-center p-5 md:justify-self-start md:p-10">
+            <p className="select-none text-6xl font-bold text-bland-600 duration-200 hover:text-primary-600 dark:text-bland-100 dark:hover:text-primary-500 md:text-8xl lg:text-9xl">
               <Translate>Hello</Translate>
             </p>
-            <p className="text-lg md:text-2xl">
+            <p className="select-none text-lg md:text-2xl">
               <Translate>{`What do you wanna find here?`}</Translate>
             </p>
 
-            <div className="py-3 mb-5 flex space-x-3">
+            <div className="mb-5 flex space-x-3 py-3">
               <Link href="/blogs" className="hover:no-underline">
-                <Button className="rounded-full w-28 bg-bland-600 dark:bg-bland-500 hover:bg-bland-700 dark:hover:bg-bland-400 dark:hover:text-bland-700">
+                <HomeButton mode="filled">
                   <Translate>Blogs</Translate>
-                </Button>
+                </HomeButton>
               </Link>
               <Link href="/portfolio" className="hover:no-underline">
-                <OutlinedButton className="rounded-full w-28 text-bland-600 dark:text-bland-400 hover:text-white dark:hover:text-bland-700 hover:bg-bland-700 dark:hover:bg-bland-400 ring-bland-700 dark:ring-bland-400">
+                <HomeButton mode="outlined">
                   <Translate>Projects</Translate>
-                </OutlinedButton>
+                </HomeButton>
               </Link>
             </div>
 
-            <p className="text-md md:text-lg tracking-wide">
+            <p className="text-md select-none tracking-wide text-bland-700 dark:text-bland-400 md:text-lg">
               <Translate>
                 {`I'm Nhat, a Software Engineer from Vietnam, with strong passion for IT. I love to share my knowledge, experience about technology, work, learning and also to write anything.`}
               </Translate>
