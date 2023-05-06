@@ -20,13 +20,13 @@ Không, không hề, chỉ là ở series này mình sẽ có vài tutorial nh�
 Một số thứ có thể kể đến như:
 
 - [Nginx](https://hub.docker.com/_/nginx/): Rất nhiều tutorial trên google, tuy nhiên mình thấy nhiều bạn gặp vướng mắc khi phải confg thêm SSL
-- [Redis Stack](https://hub.docker.com/u/redislabs): Một stack gồm cả **Redis** server và **Redis Insight** của **Redislab**. Cách cài đặt **Redis** không khó, tuy nhiên có thể nhiều bạn không biết, mất công cài cái service Redis trên máy chính mình, rồi lại phải kiếm thêm một cái app có GUI để quản lý, theo dõi, hay phân vân giữa các app GUI.
+- [Redis Stack](https://hub.docker.com/u/redislabs): Một *stack* (các bạn nhớ từ khóa này nhé) gồm cả **Redis** server và **Redis Insight** của **Redislab**. Cách cài đặt **Redis** không khó, tuy nhiên có thể nhiều bạn không biết, mất công cài cái service Redis trên máy chính mình, rồi lại phải kiếm thêm một cái app có GUI để quản lý, theo dõi, hay phân vân giữa các app GUI.
 - [Mosquitto](https://hub.docker.com/_/eclipse-mosquitto): Một MQTT Broker rất phổ biến, cũng dễ dàng config, tuy nhiên cũng giống Nginx, mình sẽ dễ confuse khi làm thêm SSL, hay config authen cho nó.
 - Ba chấm...
 
 và tất nhiên còn nhiều stack khác mình sẽ chưa kể tên, nhưng mình sẽ cố gắng dành thời gian để update series này thường xuyên.
 
-### Tại sao lại là "Stack Docker"?
+### "Stack Docker"???
 
 Nếu các bạn dẫn tới đọc bài viết này, chắc hẳn các bạn đã nghe đến các thành phần, hay khái niệm cơ bản của **Docker** như _image_, _container_, _volume_, _network_,... và chẳng có cái khái niệm nào là **stack** cả 😁.
 

@@ -5,9 +5,9 @@ import React from 'react';
 function SeriesPage() {
   const listSeries = [
     {
-      title: 'Các Stack Docker hữu ích',
+      title: 'Chạy mọi thứ với Docker',
       description: 'Cài đặt các services, môi trường chưa bao giờ dễ đến thế...',
-      url: '/series/cac-stack-docker-huu-ich/tong-quan',
+      url: '/series/chay-moi-thu-voi-docker/tong-quan',
     },
   ];
 

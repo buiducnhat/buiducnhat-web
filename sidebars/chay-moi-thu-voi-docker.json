@@ -2,7 +2,7 @@
   "useful-docker-stacks": [
     {
       "type": "category",
-      "label": "Các Stack Docker hữu ích",
+      "label": "Chạy mọi thứ với Docker",
       "collapsed": false,
       "items": ["tong-quan", "nginx-cung-ssl/index", "mosquitto-cung-ssl/index"]
     }

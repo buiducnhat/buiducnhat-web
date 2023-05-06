@@ -153,10 +153,10 @@ const config = {
       '@docusaurus/plugin-content-docs',
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       {
-        id: 'cac-stack-docker-huu-ich',
-        path: './data/series/cac-stack-docker-huu-ich',
-        routeBasePath: '/series/cac-stack-docker-huu-ich',
-        sidebarPath: require.resolve('./sidebars/cac-stack-docker-huu-ich.json'),
+        id: 'chay-moi-thu-voi-docker',
+        path: './data/series/chay-moi-thu-voi-docker',
+        routeBasePath: '/series/chay-moi-thu-voi-docker',
+        sidebarPath: require.resolve('./sidebars/chay-moi-thu-voi-docker.json'),
         editUrl: 'https://github.com/buiducnhat/buiducnhat-web/edit/main/',
       },
     ],
