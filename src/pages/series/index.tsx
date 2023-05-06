@@ -23,9 +23,7 @@ function SeriesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {listSeries.map((item) => (
-              <div
-                key={item.url}
-                className="p-5 rounded-lg bg-gradient-to-br md:bg-gradient-to-tl from-primary-100 to-bland-100 dark:from-bland-900 dark:to-gray-900 shadow-md">
+              <div key={item.url} className="p-5 rounded-xl bg-white shadow-xl">
                 <a href={item.url} className="highligh-link hover:underline">
                   <h2 className="h2-primary">{item.title}</h2>
                 </a>

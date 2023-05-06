@@ -16,7 +16,7 @@ function PortfolioPage() {
             <Translate>Porfolio</Translate>
           </h1>
 
-          <div className="p-5 rounded-md">
+          <div className="p-5 rounded-xl">
             <h2 className="text-center h2-primary">
               <Translate>Technical skills</Translate>
             </h2>

@@ -12,9 +12,9 @@ function OutlinedButton({ isLoading, isShadow, children, className, ...rest }: M
   return (
     <button
       className={twMerge(
-        'flex cursor-pointer items-center justify-center px-5 py-2.5 rounded-md font-semibold ring-1 ring-primary-500 text-primary-500 bg-transparent hover:text-white hover:bg-primary-400 duration-200',
+        'flex cursor-pointer items-center justify-center px-5 py-2.5 rounded-xl font-semibold ring-1 ring-primary-500 text-primary-500 bg-transparent hover:text-white hover:bg-primary-400 duration-200',
         isShadow &&
-          'shadow-md shadow-primary-300 dark:shadow-primary-700 hover:shadow-lg hover:shadow-primary-300 dark:hover:shadow-primary-700',
+          'shadow-xl shadow-primary-300 dark:shadow-primary-700 hover:shadow-lg hover:shadow-primary-300 dark:hover:shadow-primary-700',
         className
       )}
       disabled={isLoading}
