@@ -1,9 +1,10 @@
 import Translate from '@docusaurus/Translate';
 import Layout from '@theme/Layout';
 import React from 'react';
+
 import TimelineItem from './_components/timeline-item';
-import { EDUCATION_DATA } from './_data/education';
 import { CAREER_DATA } from './_data/career';
+import { EDUCATION_DATA } from './_data/education';
 
 function AboutPage() {
   return (

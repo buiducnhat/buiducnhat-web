@@ -1,14 +1,15 @@
-import React from 'react';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import Translate, { translate } from '@docusaurus/Translate';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
+import React from 'react';
 import {
+  FaEnvelope as EmailIcon,
+  FaFacebook as FacebookIcon,
   FaGithub as GithubIcon,
   FaLinkedin as LinkedinIcon,
-  FaFacebook as FacebookIcon,
-  FaEnvelope as EmailIcon,
 } from 'react-icons/fa';
+
 import HomeButton from './_components/button';
 
 const socialData = [
