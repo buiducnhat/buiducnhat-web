@@ -12,10 +12,6 @@ function PortfolioPage() {
       description="Trang web cá nhân của Bùi Đức Nhật, nơi viết lách, chia sẻ kiến thức IT, công nghệ hay cuộc sống">
       <div className="bg-primary-grad min-h-[70vh]">
         <div className="container py-5">
-          <h1 className="text-bold h1-primary">
-            <Translate>Porfolio</Translate>
-          </h1>
-
           <div className="rounded-xl p-5">
             <h2 className="h2-primary text-center">
               <Translate>Technical skills</Translate>
@@ -23,9 +19,11 @@ function PortfolioPage() {
 
             <div className="flex w-full justify-center">
               <div className="flex max-w-3xl flex-wrap justify-center">
-                {technicalSkills.map((x, index) => {
-                  return <SkillCard key={index} img={x.img} name={x.name} url={x.url} />;
-                })}
+                {technicalSkills
+                  .sort(() => Math.random() - 0.5)
+                  .map((x, index) => {
+                    return <SkillCard key={index} img={x.img} name={x.name} url={x.url} />;
+                  })}
               </div>
             </div>
           </div>

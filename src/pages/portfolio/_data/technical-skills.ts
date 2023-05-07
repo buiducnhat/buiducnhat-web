@@ -117,4 +117,19 @@ export const technicalSkills = [
     img: '/img/technical-skills/jenkins.svg',
     url: 'https://www.jenkins.io/',
   },
+  {
+    name: 'Linux',
+    img: '/img/technical-skills/linux.svg',
+    url: 'https://www.linux.org/',
+  },
+  {
+    name: 'Markdown',
+    img: '/img/technical-skills/markdown.svg',
+    url: 'https://www.markdownguide.org/',
+  },
+  {
+    name: 'Arduino',
+    img: '/img/technical-skills/arduino.svg',
+    url: 'https://www.arduino.cc/',
+  },
 ];

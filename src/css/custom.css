@@ -26,8 +26,8 @@ button {
   --ifm-color-primary-lightest: theme(colors.primary.50);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-background-color: theme(colors.bland.50);
-  --ifm-navbar-background-color: theme(colors.bland.50);
-  --ifm-footer-background-color: theme(colors.bland.50);
+  --ifm-navbar-background-color: theme(colors.white);
+  --ifm-footer-background-color: theme(colors.white);
 }
 
 [data-theme='dark'] {
@@ -40,8 +40,8 @@ button {
   --ifm-color-primary-lightest: theme(colors.primary.50);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-background-color: theme(colors.bland.800);
-  --ifm-navbar-background-color: theme(colors.bland.900);
-  --ifm-footer-background-color: theme(colors.bland.900);
+  --ifm-navbar-background-color: theme(colors.gray.900);
+  --ifm-footer-background-color: theme(colors.gray.900);
 }
 
 @layer components {
