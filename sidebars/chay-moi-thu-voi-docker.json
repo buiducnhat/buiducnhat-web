@@ -4,7 +4,12 @@
       "type": "category",
       "label": "Chạy mọi thứ với Docker",
       "collapsed": false,
-      "items": ["tong-quan", "nginx-cung-ssl/index", "mosquitto-cung-ssl/index", "postgresql-va-pgadmin/index"]
+      "items": [
+        "tong-quan",
+        "nginx-cung-ssl/index",
+        "mosquitto-cung-ssl/index",
+        "postgresql-va-pgadmin/index"
+      ]
     }
   ]
 }

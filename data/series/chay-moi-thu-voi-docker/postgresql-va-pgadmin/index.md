@@ -19,7 +19,7 @@ Ngoài ra bạn có thể vào trang chủ của nó để xem sự khác biệt
 
 ## Vào việcccc
 
-Ở bài này, mình sẽ không nêu yêu cầu để thực hiện nữa, các bạn chịu khó xem bài trước [tại đây](/series/chay-moi-thu-voi-docker/nginx-cung-ssl/#các-yêu-cầu-cần-thiết) nhé.
+Ở bài này, mình sẽ không nêu yêu cầu để thực hiện nữa, các bạn chịu khó xem bài trước [tại đây](../nginx-cung-ssl/#các-yêu-cầu-cần-thiết) nhé.
 
 ### Cấu trúc thư mục
 
@@ -141,7 +141,7 @@ PGADMIN_DEFAULT_PASSWORD=xxxpasswordxxx
 
 ### pgadmin-proxy hay nginx (optional)
 
-Như ở trên, **pgAdmin** sẽ chạy như một web app, và hoàn toàn có thể public ra internet và truy cập từ bất cứ trình duyệt nào. Vì vậy nếu bạn nào muốn vọc vạch, kết hợp kiến thức từ bài viết trước: [Nginx cùng SSL](/series/chay-moi-thu-voi-docker/nginx-cung-ssl/) thì có thể config thêm **nginx** để proxy cho pgAdmin nhé.
+Như ở trên, **pgAdmin** sẽ chạy như một web app, và hoàn toàn có thể public ra internet và truy cập từ bất cứ trình duyệt nào. Vì vậy nếu bạn nào muốn vọc vạch, kết hợp kiến thức từ bài viết trước: [Nginx cùng SSL](../nginx-cung-ssl) thì có thể config thêm **nginx** để proxy cho pgAdmin nhé.
 
 Về cơ bản chúng ta sẽ proxy_pass cái web pgAdmin đang chạy, cụ thể khi cùng một network như trên (network `pg`), container chạy **nginx** có thể truy cập tới container chạy **pgAdmin** qua địa chỉ `http://pgadmin:80`, vì vậy chúng ta chỉ cần config như sau:
 

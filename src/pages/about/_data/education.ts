@@ -21,16 +21,16 @@ export const EDUCATION_DATA = {
     {
       title: 'THPT Tiên Lãng',
       url: 'https://facebook.com/thpttienlanghaiphong',
-      subtitle: 'Học sinh',
+      subtitle: 'Student',
       time: '2016 - 2019',
       detail: [''],
     },
     {
-      title: 'Đại học Bách Khoa Hà Nội',
+      title: 'Trường CNTT và TT - Đại học Bách Khoa Hà Nội',
       url: 'https://www.hust.edu.vn/',
       subtitle: 'Kỹ thuật máy tính',
       time: '2019 - Hiện tại',
-      detail: ['- Mục tiêu tốt nghiệp với bằng kỹ sư loại giỏi'],
+      detail: [''],
     },
   ],
 };
